@@ -1,3 +1,3 @@
 # SneakerStoreProject
-![Example 1](https://media.tenor.com/FqJEfObxybkAAAAC/screenshot-choose-your-power.gif)
+![Example 1](dic/Анимация.gif?raw=true)
 ![Example 2](doc/example2.gif?raw=true)
