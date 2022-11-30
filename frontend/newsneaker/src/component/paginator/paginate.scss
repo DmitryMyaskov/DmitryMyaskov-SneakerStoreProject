@@ -1,0 +1,59 @@
+input {
+  box-shadow: 0;
+  outline: 0;
+}
+
+
+.paginatio{
+  margin-top: 20px;
+  color:black;
+}
+
+.paginatio>li>button,.paginatio>li>span {
+  border: 1px solid #d2d2d2;
+    border-radius: 6px;
+    padding: 11px;
+    padding-bottom: 5px;
+    background: #000000;
+    padding-top: 5px;
+    text-decoration: none;
+    color: white;
+
+    &:hover{
+      background-color: rgb(138, 138, 138);
+    }
+    &:active{
+      scale: 0.9;
+    }
+
+}
+
+
+#react-paginate {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+#react-paginate ul{
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+}
+#react-paginate li{
+  display: flex;
+  box-shadow: 0 5px 40px rgba(#000,.2);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#react-paginate .break a {
+  cursor: default;
+  text-decoration: none;
+}
+
+
+
+
+

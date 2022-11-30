@@ -1,0 +1,50 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+
+
+jwt:
+  auth:
+    app: Spring-security-app
+    secret_key:  ZmQ0ZGI5NjQ0MDQwY2I4MjMxY2Y3ZmI3MjdhN2ZmMjNhODViOTg1ZGE0NTBjMGM4NDA5NzYxMjdjOWMwYWRmZTBlZjlhNGY3ZTg4Y2U3YTE1ODVkZDU5Y2Y3OGYwZWE1NzUzNWQ2YjFjZDc0NGMxZWU2MmQ3MjY1NzJmNTE0MzI
+    expires_in: 3600
+#
+#    properties:
+#      hibernate:
+#        format_sql: true
+#        ddl-auto: create-drop
+
+
+
+
+
+
+
+
+
+#    properties:
+#      hibernate:
+#        format_sql: true
+
+#    show-sql: true
+#logging:
+#  level:
+#    org:
+#      springframework:
+#        jdbc:
+#          core: trace
+
+
+#      logging:
+#        level:
+#          org:
+#            springframework:
+#              jdbc:
+#                core=TRAC:

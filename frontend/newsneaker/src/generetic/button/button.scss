@@ -1,0 +1,91 @@
+
+.push{
+    position: relative;
+    border: none;
+    padding: 10px 30px;
+    display: inline-flex;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(111,29,194,1) 0%, rgba(0,212,255,1) 100%);
+    overflow: hidden;
+    border-radius: 5px;
+
+    &:hover{
+        scale: 1.01;
+        background: linear-gradient(40deg, rgba(2,0,36,1) 0%, rgba(111,29,194,1) 0%, rgba(0,212,255,1) 100%);
+        box-shadow: 0 0 15px rgba(rgb(0, 255, 72), 2.5);
+        ;
+    }
+
+    span{
+        pointer-events: none;
+        cursor:default;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+    }
+}
+
+.push::before{
+    transition: all 0.1s ease-in-out;
+    position:absolute;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    left:var(--x);
+    top:var(--y);
+    transform: translate(-50%,-50%);
+    opacity: 0.5;
+}
+
+
+
+.push:active{
+    scale: .93;
+    transition: .1s ease-in-out;
+    &::before{
+    background: white;
+    width: 90px;
+    height: 90px;
+    }
+}
+
+.button__outline{
+    border: 1px solid #D3D3D3;
+    padding: 12px 0 14px;
+    width: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: white;
+    cursor: pointer;
+    &:hover{
+        background-color: #D3D3D3;
+        a{
+            color: black;
+        }
+        svg path{
+            stroke: black;
+        }
+    }
+    a{
+        text-decoration: none;
+        color:#000000;
+        display: flex;
+        align-items: center;
+        svg{
+            margin-right: 10px;
+        }
+        span{
+            font-family: 'Proxima Nova';
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 8px;
+            letter-spacing: 0em;
+            text-align: center;            
+        }
+    }
+}
+
+

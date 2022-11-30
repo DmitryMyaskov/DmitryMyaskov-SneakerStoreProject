@@ -1,0 +1,40 @@
+.popup-search{
+    position: absolute;
+    right: -155px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    overflow: hidden;
+    z-index: 2;
+    width: 450px;
+    // height: 130px;
+    box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    &__form{
+        display: flex;
+        justify-content: space-between;
+        .btn-header{
+            background-color: rgb(172, 200, 251);
+            border: 0;
+            padding: 10px 40px;
+            border-radius: 50px;
+            color:rgb(69, 69, 150)
+        }
+        .btn-header:hover{
+            background-color: rgb(195, 213, 245);
+            
+        }
+    }
+}
+
+.serch-field{
+    width: 100%;
+    margin-right: 10px;
+    input{
+        // border: 1px solid rgb(184, 206, 247);
+        border: none;
+        width: 100%;
+        border-radius: 50px;
+        height: 46px;
+        padding: 12px 14px;
+    }
+}
